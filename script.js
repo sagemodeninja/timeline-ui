@@ -2,16 +2,10 @@ var today;
 var timeline;
 
 document.addEventListener("DOMContentLoaded", e => {
-    today = new Date();
+    today = new Date("12/31/1998");
     timeline = new Timeline(today);
-    
-    let count = 0;
-    do {
-        console.log(timeline.year, timeline.month, timeline.date, timeline.day);
-        timeline.previousDay();
-        count++;
-    } while (count < 480);
 
+    console.log(timeline);
 });
 
 class Timeline {

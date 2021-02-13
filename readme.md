@@ -5,13 +5,22 @@ Introduction here...
 ### Usage & Examples
 
 ```javascript
-console.log("Hello world.");
+var today = new Date("12/31/1998");
+var timeline = new Timeline(today);
+
+console.log(timeline.year, timeline.month, timeline.date, timeline.day);
+// Expected output: 1998 11 31 4
+
+timeline.nextDay();
+console.log(timeline.year, timeline.month, timeline.date, timeline.day);
+// Expected output: 1999 0 1 5
 ```
 
 ### Features
 
-+ Feature 1
-+ Feature 2
++ Create a Timeline object.
++ Move current date to +1 day(s). (forward)
++ Move current date to -1 day(s). (backward)
 
 ### Credits
 
@@ -19,7 +28,7 @@ Copyright © 2021 Gary Antier.
 
 ### License
 
-This {Project type here} is released under the [MIT license](https://github.com/sagemodeninja/AgilityFramework.Imap.Scraping.UnionBankPH/blob/master/License.md).
+This project is released under the [MIT license](https://github.com/sagemodeninja/timeline-ui/blob/main/License.md).
 
 ### Bug reports
 
