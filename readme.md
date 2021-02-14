@@ -1,12 +1,12 @@
 ### Introduction
 
-Introduction here...
+A user-interface that let's users/viewers scrolls into a timeline.
 
 ### Usage & Examples
 
 ```javascript
 var today = new Date("12/31/1998");
-var timeline = new Timeline(today);
+var timeline = new Timeline(today.getFullYear(), today.getMonth(), today.getDate());
 
 console.log(timeline.year, timeline.month, timeline.date, timeline.day);
 // Expected output: 1998 11 31 4
