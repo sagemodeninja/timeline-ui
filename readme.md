@@ -8,11 +8,11 @@ A user-interface that let's users/viewers scrolls into a timeline.
 var today = new Date("12/31/1998");
 var timeline = new Timeline(today.getFullYear(), today.getMonth(), today.getDate());
 
-console.log(timeline.year, timeline.month, timeline.date, timeline.day);
+console.log(timeline.year, timeline.month, timeline.date, timeline.dayOfWeek);
 // Expected output: 1998 11 31 4
 
 timeline.nextDay();
-console.log(timeline.year, timeline.month, timeline.date, timeline.day);
+console.log(timeline.year, timeline.month, timeline.date, timeline.dayOfWeek);
 // Expected output: 1999 0 1 5
 ```
 
